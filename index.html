@@ -100,11 +100,14 @@
         }
     </style>
 
-    <!-- Encoded Google Analytics Tracking Code (Base64) -->
+    <!-- Google Analytics Tracking Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XGHDLQXVRL"></script>
     <script>
-        var encodedScript = "PHNjcmlwdCBhc3luYyBzcmM9Imh0dHBzOi8vd3d3Lmdvb2dsZXRh..." // Base64-encoded script
-        var decodedScript = atob(encodedScript);
-        document.write('<script>' + decodedScript + '</' + 'script>');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-XGHDLQXVRL');
     </script>
 </head>
 
